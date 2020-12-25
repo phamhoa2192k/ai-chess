@@ -310,11 +310,11 @@ function test() {
 function is_promotion(cfg) {
     var piece = cfg.chess.get(cfg.move.from);
     if (
-        cfg.chess.turn() == 'w' &&
+        cfg.chess.turn() == 'b' &&
         cfg.move.from.charAt(1) == 7 &&
         cfg.move.to.charAt(1) == 8 &&
         piece.type == 'p' &&
-        piece.color == 'w'
+        piece.color == 'b'
     ) {
         return true;
 
